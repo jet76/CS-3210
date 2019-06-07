@@ -1,0 +1,21 @@
+0 Create 5 cells: Divisor (0), One (1), Input (2), Remainder (3), Output (4)
+4 5
+0 Store 2 in Divisor (Cell 0)
+22 0 2
+0 Store 1 in One (Cell 1)
+22 1 1
+0 Prompt user for Input, store in Cell 2
+27 2
+0 Perform remainder division on Input (Cell 2) using Divisor (Cell 0) and store in Remainder (Cell 3)
+13 3 2 0
+0 If Remainder (Cell 3) holds 0 (even) put 1 in Output (Cell 4), otherwise put 0 (odd)
+20 4 3
+0 Add Cell 1 to Cell 4 and store in cell 4 (1 for odd, 2 for even)
+9 4 1 4
+0 Output Cell 4
+28 4
+0 Done (Halt)
+26
+
+
+

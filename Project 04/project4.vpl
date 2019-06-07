@@ -1,0 +1,39 @@
+4 7		allocate space for locals
+22 0 0		store 0
+22 1 1		store 1
+22 2 0		holds current cell
+22 3 51		row length + 1
+22 4 2601	num cells in array
+31 5 4		reduce heap pointer to create array space
+
+25 5 2 1	put 1 in current cell
+9 2 2 1		move to next cell
+
+1 1000		fill rest of row with zeros
+25 5 2 0	put 0 in current cell (0,0)
+9 2 2 1		move to next cell
+16 6 2 3	if cell < row length +1
+8 1000 6	branch to fill rest of row with zeros
+
+25 5 2 1	put 1 in current cell (1,0)
+9 2 2 1		move to next cell
+
+1 1001		fill pascal's triangle
+10 6 2 3	location of second number
+10 7 6 1	location of first number
+24 6 5 6	second number
+24 7 5 7	first number
+9 6 6 7		sum of values
+25 5 2 6	put sum in current cell
+9 2 2 1		move to next cell
+16 6 2 4	if current cell < num cells in array
+8 1001 6	branch to fill pascal's triangle
+
+27 0		input n
+27 1		input k
+11 0 0 3	multiply n by row length + 1
+9 0 0 1		add k to n
+24 0 5 0	get result from array
+28 0		display result
+
+26		halt

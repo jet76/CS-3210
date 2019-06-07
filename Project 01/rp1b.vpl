@@ -1,0 +1,53 @@
+0 Create 5 cells: Input/Output/Number (0), One (1), Two (2), Three (3), Remainder/Even/Odd/Equal (4)
+4 5
+
+0 Store 1 in Cell 1
+22 1 1
+0 Store 2 in Cell 2
+22 2 2
+0 Store 3 in Cell 3
+22 3 3
+
+0 Prompt user for Input, store in Cell 0
+27 0
+
+0 Start of loop
+1 100
+0 Check to see if the Number (cell 0) is equal to 1 (Cell 1) and store result (Cell 4)
+14 4 0 1
+0 If number is 1 (Cell 4) goto 300 (End)
+8 300 4
+0 Perform remainder division on Input (Cell 0) dividing by Two (Cell 2) and store in Remainder (Cell 4)
+13 4 0 2
+0 If Remainder (Cell 4) holds 0 (even) put 1 (even) in Output (Cell 4), otherwise put 0 (odd)
+20 4 4
+0 If 1 in Cell 4 (even) goto 200
+8 200 4
+
+0 Multiply Number (Cell 0) by 3 (Cell 3) and store result (Cell 0)
+11 0 0 3
+0 Add 1 (Cell 1) to Number (Cell 0) and store result (Cell 0)
+9 0 0 1
+0 Output the result (Cell 0)
+28 0
+0 New line
+29
+0 Goto 100 (Loop)
+7 100
+
+1 200
+0 Divide Number (Cell 0) by 2 (Cell 2) and store result (Cell 0)
+12 0 0 2
+0 Output the result (Cell 0)
+28 0
+0 New line
+29
+0 Goto 100 (Loop)
+7 100
+
+1 300
+0 Done (Halt)
+26
+
+
+

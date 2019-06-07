@@ -1,0 +1,53 @@
+4 10		make space for locals
+22 0 0 		constant 0
+22 1 1		constant 1
+22 2 2		constant 2
+22 3 1326	array size
+31 4 3		create array
+22 5 51		num rows
+22 6 0		holds row number
+22 7 0		holds col number
+22 8 0		holds array index
+
+1 1000
+14 9 7 6	if col = row
+8 1002 9	branch to 
+
+14 9 7 0	if col = 0
+8 1001 9	branch to
+
+10 9 8 6	index of above right number
+10 10 9 1	index of above left number
+24 10 3 10	get upper left number
+24 9 3 9	get upper right number
+9 9 9 10	add numbers
+25 3 8 9	store value in array
+9 7 7 1		increment col num
+9 8 8 1		increment array index
+7 1000
+
+1 1001
+25 3 8 1	put one in the current index
+9 7 7 1		increment col num
+9 8 8 1		increment array index
+7 1000
+
+1 1002
+28 3
+25 3 8 1	put one in the current index
+9 6 6 1		increment row number
+14 9 7 5	if col = num rows
+8 1003 9	branch to
+22 7 0		reset col number
+9 8 8 1		increment array index
+7 1000		jump
+
+1 1003
+27 9		get n
+27 10		get k
+11 9 9 2	mul n by 2
+9 9 9 10	add k
+24 9 3 9	get result
+28 9		output result
+
+26		halt
