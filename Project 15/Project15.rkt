@@ -1,7 +1,7 @@
 #lang racket
 (define (genTours n)
-  (add1 (permutations (listMaker 2 n)))
-)
+  (add1(permutations (listMaker 2 n))))
+
 
 (define (add1 n)
   (cond
@@ -55,7 +55,7 @@
 (define (insert x list)
   (cond
     ((null? list) (cons x list))
-    ((< (car x) (car (car list))) (cons x list))
+    ((<= (car x) (car (car list))) (cons x list))
     ((cons(car list) (insert x (cdr list))))
   )
 )
