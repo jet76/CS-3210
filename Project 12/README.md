@@ -4,7 +4,7 @@ Create these functions in Racket that show that we can comfortably do the things
 
 <table>
   <tr>
-    <td>```(app a x)```</td><td>return a list consisting of the numbers in x with the number a appended on the end</td>
+    <td><code>(app a x)</code></td><td>return a list consisting of the numbers in x with the number a appended on the end</td>
   </tr>
   <tr>
     <td>(ins a p x)</td><td>return a list that is x with a inserted in position p (position 0 is the beginning of the list)</td>
