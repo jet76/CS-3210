@@ -29,7 +29,7 @@ int pasTri( int n, int k ) {
 Actually, the test program test6 in the VPL/Tests folder implements these ideas. This program works great, but it takes way too long for larger numbers. For example, try it on the inputs 30 and 15 (this took about 42 seconds to run on my computer).
 
 To create a much more efficient VPL program, first organize Pascal’s Triangle to make it more obvious how it fits into a 2D array:
-<table width="fixed">
+<table>
   <tr align="center">
     <td></td>
     <td>0</td>
