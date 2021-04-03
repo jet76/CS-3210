@@ -1,8 +1,8 @@
 # Project 4
 
-Your task on this project is to write a VPL program that will compute {n \choose x} efficiently, as detailed below.
+Your task on this project is to write a VPL program that will compute *n* choose *k* efficiently, as detailed below.
 
-Recall that nk is the number of ways to choose k things out of n, and is the kth item in the nth row of Pascal’s Triangle, which is often drawn like this:
+Recall that *n* choose *k* is the number of ways to choose *k8 things out of *n*, and is the *k*<sup>th</sup> item in the *n*<sup>t</sup>h row of Pascal’s Triangle, which is often drawn like this:
 <pre>
                1
             1     1
@@ -113,16 +113,16 @@ To create a much more efficient VPL program, first organize Pascal’s Triangle 
 </table>
 
 
-Write a VPL program in a file named project4.vpl that efficiently computes any requested value 􀀀nk (up to n = 50—much beyond that and the numbers in Pascal’s Triangle become too large to be represented as int values) very quickly.
+Write a VPL program in a file named project4.vpl that efficiently computes any requested value *n* choose *k* (up to *n = 50*—much beyond that and the numbers in Pascal’s Triangle become too large to be represented as int values) very quickly.
 
 The idea for this efficient algorithm is simply to simulate a 2D array in VPL, and to fill in values in that array until the desired value is reached.
 
-Note that to compute 􀀀5050 will require a 51 by 51 matrix, which only takes 512 = 2601 memory cells, which is quite feasible (so you don’t need to worry about storing Pascal’s Triangle cleverly so as to avoid the wasted space for the unused cells).
+Note that to compute 50 choose 50 will require a 51 by 51 matrix, which only takes 51<sup>2</sup> = 2601 memory cells, which is quite feasible (so you don’t need to worry about storing Pascal’s Triangle cleverly so as to avoid the wasted space for the unused cells).
 
 You will probably want to create subprograms that store and retrieve values to and from a simulated 2D array.
 
-You don’t need to error-check the user’s input values for n and k.
+You don’t need to error-check the user’s input values for *n* and *k*.
 
-If you don’t like the limit on the size of n, feel free to modify your VPL implementation to use BIgInteger objects everywhere instead of int values, and then the only limit will be the time it takes to fill in the 2D array.
+If you don’t like the limit on the size of *n*, feel free to modify your VPL implementation to use BigInteger objects everywhere instead of int values, and then the only limit will be the time it takes to fill in the 2D array.
 
 When you are happy with your work, email with your single file named project4.vpl attached.
