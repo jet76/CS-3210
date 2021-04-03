@@ -29,7 +29,7 @@ int pasTri( int n, int k ) {
 Actually, the test program test6 in the VPL/Tests folder implements these ideas. This program works great, but it takes way too long for larger numbers. For example, try it on the inputs 30 and 15 (this took about 42 seconds to run on my computer).
 
 To create a much more efficient VPL program, first organize Pascal’s Triangle to make it more obvious how it fits into a 2D array:
-<table align="center">
+<table>
   <tr>
     <td></td>
     <td>0</td>
@@ -100,7 +100,7 @@ To create a much more efficient VPL program, first organize Pascal’s Triangle 
     <td>1</td>
     <td>-</td>
   </tr>
-  <tr>
+  <tr align="center">
     <td>6</td>
     <td>1</td>
     <td>6</td>
@@ -125,4 +125,4 @@ You don’t need to error-check the user’s input values for n and k.
 
 If you don’t like the limit on the size of n, feel free to modify your VPL implementation to use BIgInteger objects everywhere instead of int values, and then the only limit will be the time it takes to fill in the 2D array.
 
-When you are happy with your work, email me at shultzj@msudenver.edu with your single file named project4.vpl attached.
+When you are happy with your work, email with your single file named project4.vpl attached.
