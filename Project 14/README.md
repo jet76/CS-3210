@@ -1,6 +1,7 @@
 # Project 14 - Binary search trees in Lisp
 
 - Create a function named buildbst that takes as input a list of integers and returns an expression that encodes a binary tree, where the numbers in the input list are added, in first to last order, to form a binary search tree.
+
 For example, the call
 (buildbst ’(3 1 7 5) )
 should produce as output
