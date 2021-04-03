@@ -1,6 +1,6 @@
 # Project 4
 
-Your task on this project is to write a VPL program that will compute nk efficiently, as detailed below.
+Your task on this project is to write a VPL program that will compute k^n^ efficiently, as detailed below.
 
 Recall that nk is the number of ways to choose k things out of n, and is the kth item in the nth row of Pascal’s Triangle, which is often drawn like this:
 <pre>
