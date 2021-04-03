@@ -30,8 +30,8 @@ Actually, the test program test6 in the VPL/Tests folder implements these ideas.
 
 To create a much more efficient VPL program, first organize Pascal’s Triangle to make it more obvious how it fits into a 2D array:
 <table>
-  <tr>
-    <td></td>
+  <tr align="center">
+    <td>&nbsp;&nbsp;</td>
     <td>0</td>
     <td>1</td>
     <td>2</td>
@@ -40,7 +40,7 @@ To create a much more efficient VPL program, first organize Pascal’s Triangle 
     <td>5</td>
     <td>6</td>
   </tr>
-  <tr>
+  <tr align="center">
     <td>0</td>
     <td>1</td>
     <td>-</td>
@@ -50,7 +50,7 @@ To create a much more efficient VPL program, first organize Pascal’s Triangle 
     <td>-</td>
     <td>-</td>
   </tr>
-  <tr>
+  <tr align="center">
     <td>1</td>
     <td>1</td>
     <td>1</td>
@@ -60,7 +60,7 @@ To create a much more efficient VPL program, first organize Pascal’s Triangle 
     <td>-</td>
     <td>-</td>
   </tr>
-  <tr>
+  <tr align="center">
     <td>2</td>
     <td>1</td>
     <td>2</td>
@@ -70,7 +70,7 @@ To create a much more efficient VPL program, first organize Pascal’s Triangle 
     <td>-</td>
     <td>-</td>
   </tr>
-  <tr>
+  <tr align="center">
     <td>3</td>
     <td>1</td>
     <td>3</td>
