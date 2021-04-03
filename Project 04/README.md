@@ -80,7 +80,7 @@ To create a much more efficient VPL program, first organize Pascal’s Triangle 
     <td>-</td>
     <td>-</td>
   </tr>
-  <tr>
+  <tr align="center">
     <td>4</td>
     <td>1</td>
     <td>4</td>
@@ -90,7 +90,7 @@ To create a much more efficient VPL program, first organize Pascal’s Triangle 
     <td>-</td>
     <td>-</td>
   </tr>
-  <tr>
+  <tr align="center">
     <td>5</td>
     <td>1</td>
     <td>5</td>
