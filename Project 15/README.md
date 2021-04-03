@@ -10,11 +10,11 @@ Given a list of *n* vertices in the plane, named *v<sub>j</sub> = (x<sub>j</sub>
 
 For example, suppose we have these six points: *v<sub>1</sub> = (3, 1), v<sub>2</sub> = (8, 2), v<sub>3</sub> = (5, 4), v<sub>4</sub> = (2, 6), v<sub>5</sub> = (6, 6), and v<sub>6</sub> = (4, 8)*.
 
-Insert Image 1 Here
+![ETSP1](Example1.png)
 
 One possible tour is 1 − 2 − 3 − 4 − 5 − 6 − 1:
 
-Insert Image 2 Here
+![ETSP2](Example2.png)
 
 To figure the length of this tour, we first find the distance between *v<sub>1</sub>* and *v<sub>2</sub>*, which is (by the Pythagorean theorem)  
 &Sqrt;[(8 − 3)<sup>2</sup> + (2 − 1)<sup>2</sup>] = &Sqrt;[25 + 1] = &Sqrt;[26] &thickapprox; 5.10  
