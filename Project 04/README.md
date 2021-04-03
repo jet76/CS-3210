@@ -15,7 +15,7 @@ Recall that nk is the number of ways to choose k things out of n, and is the kth
 
 A simple recursive algorithm can be based on the fact that each inner number in Pascal’s Triangle is the sum of its two neighbors above and the outer values are all 1. These facts lead to code like this:
 
-'
+`
 int pasTri( int n, int k ) {  \
   if ( n==0 )  \
     return 1;  \
@@ -24,7 +24,7 @@ int pasTri( int n, int k ) {  \
   else  \
     return pasTri( n-1, k-1 ) + pasTri( n-1, k );  \
 }  
-'
+`
 
 Actually, the test program test6 in the VPL/Tests folder implements these ideas. This program works great, but it takes way too long for larger numbers. For example, try it on the inputs 30 and 15 (this took about 42 seconds to run on my computer).
 
