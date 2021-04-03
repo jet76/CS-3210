@@ -88,8 +88,10 @@ Here are all the other distances between vertices (shown rounded to two decimal 
 After adding up all the distances from vertex to vertex along the tour, we get tour length 
 5.10 + 3.61 + 3.61 + 4.00 + 2.83 + 7.07 = 26.22 
 
-On the other hand, the tour 1 − 2 − 3 − 5 − 6 − 4 − 1 has length 21.70, which turns out to be the optimal tour.
+On the other hand, the tour 1 − 2 − 3 − 5 − 6 − 4 − 1 has length 21.70, which turns out to be the optimal tour.  
+
 ---
+
 Here are the functions you need to produce, along with any additional supporting functions that you need:
 
 Create a function genTours that takes one integer argument, n, and returns a list of all possible tours with the vertices 1 through n. To make this project considerably easier, due to shortage of time, you are allowed to use the built-in Racket function permutations.  
