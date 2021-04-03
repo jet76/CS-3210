@@ -29,23 +29,90 @@ int pasTri( int n, int k ) {
 Actually, the test program test6 in the VPL/Tests folder implements these ideas. This program works great, but it takes way too long for larger numbers. For example, try it on the inputs 30 and 15 (this took about 42 seconds to run on my computer).
 
 To create a much more efficient VPL program, first organize Pascal’s Triangle to make it more obvious how it fits into a 2D array:
-0
-1
-2
-3
-4
-5
-6
-0 1 2 3 4 5 6
-1 − − − − − −
-1 1 − − − − −
-1 2 1 − − − −
-1 3 3 1 − − −
-1 4 6 4 1 − −
-1 5 10 10 5 1 −
-1 6 15 20 15 6 1
-CS 3210 Spring 2019 Page 9
-Introduction February 3, 2019
+<table>
+  <tr>
+    <td></td>
+    <td>0</td>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>1</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>1</td>
+    <td>2</td>
+    <td>1</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>1</td>
+    <td>3</td>
+    <td>3</td>
+    <td>1</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>1</td>
+    <td>4</td>
+    <td>6</td>
+    <td>4</td>
+    <td>1</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>1</td>
+    <td>5</td>
+    <td>10</td>
+    <td>10</td>
+    <td>5</td>
+    <td>1</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>1</td>
+    <td>6</td>
+    <td>15</td>
+    <td>20</td>
+    <td>15</td>
+    <td>6</td>
+    <td>1</td>
+  </tr>
+</table>
+
+
 Write a VPL program in a file named project4.vpl that efficiently computes any re-
 quested value 􀀀n
 k (up to n = 50—much beyond that and the numbers in Pascal’s Triangle
