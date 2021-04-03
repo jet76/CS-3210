@@ -16,13 +16,13 @@ Recall that nk is the number of ways to choose k things out of n, and is the kth
 A simple recursive algorithm can be based on the fact that each inner number in Pascal’s Triangle is the sum of its two neighbors above and the outer values are all 1. These facts lead to code like this:
 
 `
-int pasTri( int n, int k ) {  \
-  if ( n==0 )  \
-    return 1;  \
-  else if ( n==k )  \
-    return 1;  \
-  else  \
-    return pasTri( n-1, k-1 ) + pasTri( n-1, k );  \
+int pasTri( int n, int k ) {  
+  if ( n==0 )  
+    return 1;  
+  else if ( n==k )  
+    return 1;  
+  else  
+    return pasTri( n-1, k-1 ) + pasTri( n-1, k );  
 }  
 `
 
