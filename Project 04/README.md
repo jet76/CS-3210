@@ -3,15 +3,15 @@
 Your task on this project is to write a VPL program that will compute nk efficiently, as detailed below.
 
 Recall that nk is the number of ways to choose k things out of n, and is the kth item in the nth row of Pascal’s Triangle, which is often drawn like this:
-1
-1 1
-1 2 1
-1 3 3 1
-1 4 6 4 1
-1 5 10 10 5 1
-1 6 15......... 20 15 6 1 .......................................................................................................
-...............................
-....................... .......
+<pre>
+               1
+            1     1
+         1     2     1
+      1     3     3    1
+    1    4     6     4   1
+  1   5    10    10    5   1
+1   6   15    20    15   6   1
+</pre>
 
 A simple recursive algorithm can be based on the fact that each inner number in Pascal’s Triangle is the sum of its two neighbors above and the outer values are all 1. These facts lead to code like this:
 
@@ -23,7 +23,7 @@ int pasTri( int n, int k ) {
     return 1;  
    else  
   return pasTri( n-1, k-1 ) + pasTri( n-1, k );  
- }  
+}  
 ```
 
 Actually, the test program test6 in the VPL/Tests folder implements these ideas. This program works great, but it takes way too long for larger numbers. For example, try it on the inputs 30 and 15 (this took about 42 seconds to run on my computer).
