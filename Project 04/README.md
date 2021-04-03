@@ -29,9 +29,9 @@ int pasTri( int n, int k ) {
 Actually, the test program test6 in the VPL/Tests folder implements these ideas. This program works great, but it takes way too long for larger numbers. For example, try it on the inputs 30 and 15 (this took about 42 seconds to run on my computer).
 
 To create a much more efficient VPL program, first organize Pascal’s Triangle to make it more obvious how it fits into a 2D array:
-<table align="center">
+<table text-align="center">
   <tr>
-    <td>&nbsp;&nbsp;</td>
+    <td></td>
     <td>0</td>
     <td>1</td>
     <td>2</td>
@@ -113,21 +113,16 @@ To create a much more efficient VPL program, first organize Pascal’s Triangle 
 </table>
 
 
-Write a VPL program in a file named project4.vpl that efficiently computes any re-
-quested value 􀀀n
-k (up to n = 50—much beyond that and the numbers in Pascal’s Triangle
-become too large to be represented as int values) very quickly.
-The idea for this efficient algorithm is simply to simulate a 2D array in VPL, and to fill in
-values in that array until the desired value is reached.
-Note that to compute 􀀀50
-50 will require a 51 by 51 matrix, which only takes 512 = 2601
-memory cells, which is quite feasible (so you don’t need to worry about storing Pascal’s
-Triangle cleverly so as to avoid the wasted space for the unused cells).
-You will probably want to create subprograms that store and retrieve values to and from
-a simulated 2D array.
+Write a VPL program in a file named project4.vpl that efficiently computes any requested value 􀀀nk (up to n = 50—much beyond that and the numbers in Pascal’s Triangle become too large to be represented as int values) very quickly.
+
+The idea for this efficient algorithm is simply to simulate a 2D array in VPL, and to fill in values in that array until the desired value is reached.
+
+Note that to compute 􀀀5050 will require a 51 by 51 matrix, which only takes 512 = 2601 memory cells, which is quite feasible (so you don’t need to worry about storing Pascal’s Triangle cleverly so as to avoid the wasted space for the unused cells).
+
+You will probably want to create subprograms that store and retrieve values to and from a simulated 2D array.
+
 You don’t need to error-check the user’s input values for n and k.
-If you don’t like the limit on the size of n, feel free to modify your VPL implementation
-to use BIgInteger objects everywhere instead of int values, and then the only limit will
-be the time it takes to fill in the 2D array.
-When you are happy with your work, email me at shultzj@msudenver.edu with your
-single file named project4.vpl attached.
+
+If you don’t like the limit on the size of n, feel free to modify your VPL implementation to use BIgInteger objects everywhere instead of int values, and then the only limit will be the time it takes to fill in the 2D array.
+
+When you are happy with your work, email me at shultzj@msudenver.edu with your single file named project4.vpl attached.
