@@ -17,7 +17,7 @@ One possible tour is 1 − 2 − 3 − 4 − 5 − 6 − 1:
 Insert Image 2 Here
 
 To figure the length of this tour, we first find the distance between *v<sub>1</sub>* and *v<sub>2</sub>*, which is (by the Pythagorean theorem)  
-p(8 − 3)2 + (2 − 1)2 = p25 + 1 = p26  5.10
+&Sqrt;(8 − 3)<sup>2</sup> + (2 − 1)<sup>2</sup> = &Sqrt;25 + 1 = &Sqrt;26 &thickapprox; 5.10  
 Here are all the other distances between vertices (shown rounded to two decimal places), where row j, column k holds the distance from vj to vk:
 
 <table>
@@ -86,14 +86,6 @@ Here are all the other distances between vertices (shown rounded to two decimal 
   </tr>
   
 </table>  
-
-1: 2: 3: 4: 5: 6:
-1: 0.00 5.10 3.61 5.10 5.83 7.07
-2: 5.10 0.00 3.61 7.21 4.47 7.21
-3: 3.61 3.61 0.00 3.61 2.24 4.12
-4: 5.10 7.21 3.61 0.00 4.00 2.83
-5: 5.83 4.47 2.24 4.00 0.00 2.83
-6: 7.07 7.21 4.12 2.83 2.83 0.00
 
 After adding up all the distances from vertex to vertex along the tour, we get tour length 
 5.10 + 3.61 + 3.61 + 4.00 + 2.83 + 7.07 = 26.22 
