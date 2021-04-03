@@ -92,19 +92,20 @@ On the other hand, the tour 1 − 2 − 3 − 5 − 6 − 4 − 1 has length 21.
 
 Here are the functions you need to produce, along with any additional supporting functions that you need:
 - Create a function genTours that takes one integer argument, n, and returns a list of all possible tours with the vertices 1 through n. To make this project considerably easier, due to shortage of time, you are allowed to use the built-in Racket function permutations.  
-Here is a sample run (intended to show the Dr.Racket interactions window), showing one possible ordering of the tours—your function may generate them in any order you like:
+Here is a sample run (intended to show the Dr.Racket interactions window), showing one possible ordering of the tours—your function may generate them in any order you like:  
 ```console
 > (genTours 4)
 ((1 2 3 4) (1 2 4 3) (1 3 2 4) (1 3 4 2) (1 4 2 3) (1 4 3 2))
 ```
 - Create a function named score that takes as inputs a list of positions of n vertices and a tour and returns the tour length.  
-Here is a sample run (the first example given earlier, put into Lisp format, with the numeric function values not necessarily shown with the correct number of decimals):
+Here is a sample run (the first example given earlier, put into Lisp format, with the numeric function values not necessarily shown with the correct number of decimals):  
 ```console
 > (score ’((3 1) (8 2) (5 4) (2 6) (6 6) (4 8)) ’(1 2 3 4 5 6))
 26.22
 ```
-- Create a function named etsp that takes as its single argument a list of positions and returns an optimal tour.  
-Here is a sample run (using the first example given earlier):
+-
+Create a function named etsp that takes as its single argument a list of positions and returns an optimal tour.  
+Here is a sample run (using the first example given earlier):  
 ```console
 > (etsp ’((3 1) (8 2) (5 4) (2 6) (6 6) (4 8)))
 (1 2 3 5 6 4)
