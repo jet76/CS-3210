@@ -21,9 +21,9 @@ int pasTri( int n, int k ) {
     return 1;  
   else if ( n==k )  
     return 1;  
-  else  
-    return pasTri( n-1, k-1 ) + pasTri( n-1, k );  
-}  
+   else  
+  return pasTri( n-1, k-1 ) + pasTri( n-1, k );  
+ }  
 `
 
 Actually, the test program test6 in the VPL/Tests folder implements these ideas. This program works great, but it takes way too long for larger numbers. For example, try it on the inputs 30 and 15 (this took about 42 seconds to run on my computer).
