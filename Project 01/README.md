@@ -10,7 +10,9 @@ My Unix script that uploads all the course files to my website refuses—by desi
 
 These files give my implementation of VPL so you can check your VPL programs before you actually implement VPL yourself on a later project. To do this at the command line (or equivalent with an IDE) just type, assuming you have put your VPL code in a text file named rp1a.vpl:
 
+```console
 java VPL rp1a.vpl 100000
+```
 
 This should run your VPL program (it actually runs the Java program named VPL and feeds it the VPL code, along with the 100000 which is the number of memory cells requested).
 
