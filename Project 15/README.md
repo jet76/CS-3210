@@ -6,7 +6,7 @@ Note that this Project is of course intended to give you further practice with a
 
 ## Definition of ETSP
 
-Given a list of *n* vertices in the plane, named *v<sub>j</sub> = (x<sub>j</sub> , y<sub>j<sub>)* for *j = 1, ..., n*, find a *tour* with the smallest length, where a tour starts at v1, goes from vertex to vertex, visiting each vertex exactly once, and returns to *v<sub>1</sub>*. The length of a tour is the sum of the Euclidean (ordinary, everyday geometry) lengths of all the edges in the tour.
+Given a list of *n* vertices in the plane, named *v<sub>j</sub> = (x<sub>j</sub> , y<sub>j<sub>)* for *j = 1, ..., n*, find a *tour* with the smallest length, where a tour starts at *v<sub>1</sub>*, goes from vertex to vertex, visiting each vertex exactly once, and returns to *v<sub>1</sub>*. The length of a tour is the sum of the Euclidean (ordinary, everyday geometry) lengths of all the edges in the tour.
 
 For example, suppose we have these six points: *v<sub>1</<sub> = (3, 1), v<sub>2</<sub> = (8, 2), v<sub>3</<sub> = (5, 4), v<sub>4</<sub> = (2, 6), v<sub>5</sub> = (6, 6), and v<sub>6</sub> = (4, 8)*.
 
@@ -17,7 +17,7 @@ One possible tour is 1 − 2 − 3 − 4 − 5 − 6 − 1:
 Insert Image 2 Here
 
 To figure the length of this tour, we first find the distance between *v<sub>1</sub>* and *v<sub>2</sub>*, which is (by the Pythagorean theorem)  
-&Sqrt;(8 − 3)<sup>2</sup> + (2 − 1)<sup>2</sup> = &Sqrt;25 + 1 = &Sqrt;26 &thickapprox; 5.10  
+&Sqrt;<SPAN STYLE="text-decoration:overline;">(8 − 3)<sup>2</sup> + (2 − 1)<sup>2</sup></span> = &Sqrt;25 + 1 = &Sqrt;26 &thickapprox; 5.10  
 Here are all the other distances between vertices (shown rounded to two decimal places), where row j, column k holds the distance from vj to vk:
 
 <table>
