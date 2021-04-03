@@ -18,8 +18,7 @@ Insert Image 2 Here
 
 To figure the length of this tour, we first find the distance between *v<sub>1</sub>* and *v<sub>2</sub>*, which is (by the Pythagorean theorem)  
 &Sqrt;[(8 − 3)<sup>2</sup> + (2 − 1)<sup>2</sup>] = &Sqrt;[25 + 1] = &Sqrt;[26] &thickapprox; 5.10  
-Here are all the other distances between vertices (shown rounded to two decimal places), where row j, column k holds the distance from vj to vk:
-
+Here are all the other distances between vertices (shown rounded to two decimal places), where row *j*, column *k* holds the distance from *v<sub>j</sub>* to *v<sub>k</sub>*:  
 <table>
   <tr>
     <td></td>
@@ -83,8 +82,7 @@ Here are all the other distances between vertices (shown rounded to two decimal 
     <td>2.83</td>
     <td>2.83</td>
     <td>0.00</td>
-  </tr>
-  
+  </tr>  
 </table>  
 
 After adding up all the distances from vertex to vertex along the tour, we get tour length 
